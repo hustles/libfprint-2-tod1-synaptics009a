@@ -8,10 +8,11 @@ login/unlock.
 
 ## Install
 
-    git clone <this AUR package>  # or use your AUR helper
+    git clone https://github.com/hustles/libfprint-2-tod1-synaptics009a
+    cd libfprint-2-tod1-synaptics009a
     makepkg -si
 
-or, with a helper:
+Once the package is registered in the AUR, this also works:
 
     paru -S libfprint-2-tod1-synaptics009a
 
