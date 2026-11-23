@@ -1,4 +1,4 @@
-# Maintainer: stimpy <stimpy@localhost>
+# Maintainer: hustles <hustles@users.noreply.github.com>
 #
 # Native libfprint-2-tod1 driver for the Synaptics "Metallica MIS Touch"
 # 06cb:009a fingerprint reader (ThinkPad T480 / T480s / X280 / P52s), plus the
