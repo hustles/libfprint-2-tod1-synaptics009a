@@ -14,15 +14,18 @@
 #
 # Upstream leaves the firmware step to python-validity; this package ships it
 # natively, so no second driver stack is required.
+#
+# Packaging repo (patch, Cargo.lock, helper scripts, this PKGBUILD):
+#   https://github.com/hustles/libfprint-2-tod1-synaptics009a
 
 pkgname=libfprint-2-tod1-synaptics009a
 pkgver=0.1.0
 pkgrel=1
 pkgdesc="Native libfprint-2-tod1 driver + firmware/calibration tooling for the Synaptics 06cb:009a fingerprint reader (ThinkPad T480/T480s/X280/P52s)"
 arch=('x86_64')
-url="https://github.com/blackandcold/t480s-fingerprint-driver-for-linux"
-license=('MIT' 'LGPL2.1')
-depends=('fprintd' 'libfprint-tod-git' 'libusb' 'glib2')
+url="https://github.com/hustles/libfprint-2-tod1-synaptics009a"
+license=('MIT' 'LGPL-2.1-or-later')
+depends=('bash' 'fprintd' 'libfprint-tod-git' 'libusb' 'glib2')
 makedepends=('rust' 'pkgconf' 'innoextract')
 install="$pkgname.install"
 
@@ -51,7 +54,7 @@ sha256sums=('5483619bd53ff2ddd0a9704cba1e025f2b0d273c80bb7e4c69bb11994a9c6823'
             '15bc58562244378cfa2df0c6ff2e7c67b1cb0edb6ca55ab78ee1818cd8eca410'
             '474769c18736a272afc5ec37373dbd70b63a2e425ad9d5f5e38bc1be63e9db80'
             '26b73bcaacfc9ab9b0efca8abd650cdd0226b715f52cae2b0f8c1f16c965bc5e'
-            'b5e9d649e660486ce71f49c598078856b68cd95b10ffcd8bd34967923a89d42f')
+            '8cffa3219be18993c48cc8b29b7cf04bdad1c0c72bece28a50df9560535dfc22')
 
 prepare() {
   cd "t480s-fingerprint-driver-for-linux-$_commit"
